@@ -1,0 +1,28 @@
+.nav__bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem;
+    .menu__wrapper{
+        .menu{
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+            .menu__item{
+                padding: .5rem .8rem;
+                transition: 2ms;
+                .menu__link{
+                    text-decoration: none;
+                    color: black;
+                    transition: 2ms;
+                    animation: ease-in;
+                    &:hover{
+                        border-bottom: 1px solid orange;
+                        padding: .5rem  ;
+
+                    }
+                }
+            }
+        }
+    }
+}

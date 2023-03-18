@@ -1,0 +1,10 @@
+.button{
+    padding: 12px 18px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    &__primary{
+        background: orange;
+        color: white;
+    }
+}
