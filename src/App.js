@@ -1,15 +1,25 @@
 import NavBar from "./component/NavBar";
+import { motion } from "framer-motion";
+import Sidebar from "./component/Sidebar";
+import {
+ 
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App landing__page">
+     <section className="hero__wrapper">
      <div className='container'>
-      <NavBar />
-      <section className="hero__section">
-      <h1 className="title">Sell everything <br/>fairly used on a goal</h1>
-      <p className="sub__title">We are build for protection</p>
-      </section>
-     </div>
+      <Routes>
+        <Route element={<>Home</>} path="/" />
+        <Route element={<Dashboard />} path="/dashboard" />
+      </Routes>
+    </div>
+    </section>
     </div>
   );
 }
